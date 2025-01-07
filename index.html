@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:description" content="Hi! Welcome to my website! Please feel free to take a look around and/or reach out if you need anything!">
+  
+  <meta property="og:image" content="financialmarketmonitor.github.io/website-logo.jog">
+  <meta name="title" property="og:title" content="Home Page">
+  <meta property="og:url" content="financialmarketmonitor.github.io/">
+  <link rel="canonical" href="financialmarketmonitor.github.io/">
+
+  
+  
+  <meta name="author" content="Aditya Dhanraj"> 
+  <title>Home Page</title>
+  <link rel="stylesheet" href="homestyle.css">
+</head>
+
+<!-- INSERT GOOGLE TAG HERE -->
+
+
+<!--
+    
+ADD A NEW MARKET PULSE BY 
+
+CREATE THE SLIDESHOW AND THE PDF
+
+ADD BOTH TO YOUR GOOGLE DRIVE
+
+EXPORT JPG's FROM THE PDF & RENAME EACH ONE TO S{INSERT SLIDE NUMBER}
+
+NAME THE FOLDER WITH THE IMAGES mp{INSERT MARKET PULSE NUMBER}
+
+CREATE A market-pulse-{INSERT MARKET PULSE NUMBER}
+
+MOVE IT TO market-pulses AND ITS RESPECTIVE mp{INSERT MARKET PULSE NUMBER}
+
+COPY THE market-pulses-template.html
+
+ADD EVERYTHING TO THE GOOGLE DOC OF YOURS & UPDATE THE TOTAL # OF WORDS & CHARACTERS ON THE HOME PAGE
+
+ADD THE MARKET PULSE TO EVERY PAGE'S NAV BAR DROPDOWN MENU
+
+ADD THE GOOGLE TAG INFORMATION AND CHECK IF THE <HEAD> HAS UPDATED INFORMATION
+
+CHECK EVERYTHING IF IS CORRECT & PUSH CHANGES
+
+-->
+
+<body>
+  <header>
+    <nav>
+        <img src="website-logo.jpg" alt="Website Logo" class="website-logo-left">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="return false;">Market Pulses</a> <!-- Prevent navigation -->
+                <ul class="dropdown-content">
+                    <li><a href="/market-pulses/mp8/market-pulse-8.html">Market Pulse 8 01/06/2025</a></li>
+                    <li><a href="/market-pulses/mp7/market-pulse-7.html">Market Pulse 7 12/20/2024</a></li>
+                    <li><a href="/market-pulses/mp6/market-pulse-6.html">Market Pulse 6 11/18/2024</a></li>
+                    <li><a href="/market-pulses/mp5/market-pulse-5.html">Market Pulse 5 10/28/2024</a></li>
+                    <li><a href="/market-pulses/mp4/market-pulse-4.html">Market Pulse 4 10/14/2024</a></li>
+                    <li><a href="/market-pulses/mp3/market-pulse-3.html">Market Pulse 3 09/30/2024</a></li>
+                    <li><a href="/market-pulses/mp2/market-pulse-2.html">Market Pulse 2 09/23/2024</a></li>
+                    <li><a href="/market-pulses/mp1/market-pulse-1.html">Market Pulse 1 09/16/2024</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" onclick="return false;">Other</a> <!-- Prevent navigation -->
+                <ul class="dropdown-content">
+                    <li><a href="/other/trade-signal-1/trade-signal-1.html">Trading Signal 1 11/04/2024</a></li>
+                </ul>
+            </li>
+        </ul>
+        <img src="website-logo.jpg" alt="Website Logo" class="website-logo-right">
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero">
+        <div class="profile-info">
+            <img src="website-logo.jpg" alt="Website Logo" class="website-logo">
+            <h3>Aditya Dhanraj</h3>
+        </div>
+    </section>    
+
+    <main>
+
+        <!-- Box with date text -->
+        <div class="info-box">
+            <p>Inception: September 16, 2024</p>
+            <br>
+            <p>Total Words Across All Reports: ≈ 14,500</p>
+            <br>
+            <p>Total Characters Across All Reports: ≈ 88,417</p>
+            <br>
+            <p>Contact Me @ <br> <a href="mailto:adityadhanraj@utexas.edu">adityadhanraj@utexas.edu</a> | (469) 988 - 8567</p>
+            <br>
+            <a href="https://adhanraj06.github.io/" target="_blank" class="button-link">Visit My Personal Website Here</a>
+            <br><br>
+            <p><strong>Disclaimer</strong><br>I, Aditya Dhanraj, am not a licensed financial advisor nor do I claim to be. Neither I nor the "Financial Market Monitor" provides professional advice or recommendations. All content shared by me or featured on this page is for educational purposes only and should not be construed as financial, legal, or professional advice. Any decisions you make based on this content are at your own discretion, and you are encouraged to seek professional counsel when making important financial or business decisions.</p>
+        </div>
+
+        <div class="widget-container">
+            
+           <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                    {
+                    "width": "50%",
+                    "height": "100%",
+                    "colorTheme": "dark",
+                    "isTransparent": false,
+                    "locale": "en",
+                    "importanceFilter": "0,1",
+                    "countryFilter": "us,ca,fr,de,es,gb,cn,jp"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+            
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                    {
+                    "exchanges": [],
+                    "dataSource": "SPX500",
+                    "grouping": "sector",
+                    "blockSize": "volume",
+                    "blockColor": "change",
+                    "locale": "en",
+                    "symbolUrl": "",
+                    "colorTheme": "dark",
+                    "hasTopBar": true,
+                    "isDataSetEnabled": true,
+                    "isZoomEnabled": true,
+                    "hasSymbolTooltip": true,
+                    "isMonoSize": false,
+                    "width": "40%",
+                    "height": "100%"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+
+        </div>
+    </main>    
+
+    <footer>
+        <p>© <span id="current-year"></span> Aditya Dhanraj. All rights reserved.</p>
+    </footer>
+    
+    
+
+  <script src="homescript.js"></script>
+</body>
+</html>

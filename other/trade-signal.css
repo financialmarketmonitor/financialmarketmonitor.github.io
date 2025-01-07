@@ -1,0 +1,329 @@
+/* Import the Markazi Text font */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Markazi Text', serif; /* Apply globally */
+}
+
+/* Base styles for navigation */
+nav {
+    background: linear-gradient(135deg, #3b8051, #4a8f6a, #2e6352); /* Cool gradient */
+    color: #f4f4f9; /* Light text for contrast */
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    transition: background 0.3s ease; /* Smooth background color change */
+    background-size: 400% 400%; /* Smooth animation effect */
+    animation: navbarGradientAnimation 15s ease infinite; /* Animate gradient */
+}
+
+/* Gradient Animation */
+@keyframes navbarGradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Nav container */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav list items */
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Nav links */
+nav ul li a {
+    font-family: 'Markazi Text', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #d1e8e2; /* Softer off-white for text */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: color 0.3s ease, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Remove blue outline when clicking a link */
+nav ul li a:focus {
+    outline: none;
+}
+
+/* Hover effects */
+nav ul li a:hover {
+    color: #fff; /* White text on hover */
+    background: #388e3c; /* Deep green background */
+    transform: scale(1.1); /* Slight scaling for interaction */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+}
+
+/* Active link style with a cool tone */
+nav ul li a.active {
+    color: #d0e2ff; /* Slightly darker, more visible lavender-blue */
+    font-weight: bold; /* Make the active link bolder */
+    text-shadow: 0 0 10px rgba(109, 148, 209, 0.6); /* Softer glow for better visibility */
+    font-size: 2.25rem;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Adjust the dropdown background color and align */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #505e64; /* Softer, neutral gray */
+    min-width: 200px; /* Ensure it aligns better with the nav links */
+    text-align: center; /* Center align text */
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Slightly softer shadow */
+    z-index: 1;
+    top: 100%; /* Position it directly below the nav link */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust to truly center it */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown items */
+.dropdown-content li {
+    padding: 12px 16px;
+}
+
+/* Dropdown links */
+.dropdown-content li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    font-size: 1rem; /* Slightly smaller text for dropdown */
+    font-weight: 600; /* Slightly bolder for clarity */
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content li a:hover {
+    background-color: #388e3c; /* Deep green on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content li a.active {
+    color: #ff9393;
+    font-size: 1rem;
+}
+
+/* Mobile menu toggle */
+.navbar-toggler {
+    display: none;
+}
+
+/* Hamburger icon animation */
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Logo at the left (scaled down) */
+.website-logo-left {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Adjust distance from the left side */
+    width: 50px; /* Scale down the logo */
+    height: auto;
+    border-radius: 50%;
+    z-index: 1001; /* Ensure logo is above the content */
+    transition: transform 0.3s ease; /* Optional: add transition on hover */
+}
+
+/* Logo at the right (scaled down) */
+.website-logo-right {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Adjust distance from the right side */
+    width: 50px; /* Scale down the logo */
+    height: auto;
+    border-radius: 50%;
+    z-index: 1001; /* Ensure logo is above the content */
+    transition: transform 0.3s ease; /* Optional: add transition on hover */
+}
+
+/* Optionally add hover effect for logos */
+.website-logo-left:hover, .website-logo-right:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* Main Section */
+main {
+    display: flex;  /* Enable Flexbox */
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;  /* Center items horizontally */
+    justify-content: center;  /* Center items vertically */
+    padding-top: 20px;
+    background: linear-gradient(135deg, #c8c8c8, #a7a7a7);
+    animation: greyGradient 15s ease infinite;
+    flex-grow: 1;  /* Ensures main takes up available space */
+    overflow: hidden; /* Prevents overflow */
+    height: 100%;  /* Takes full height of its parent */
+}
+
+/* Gradient Animation */
+@keyframes greyGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container for the info section */
+.info-container {
+    background-color: white;
+    width: 80%; /* 80% of the parent container width */
+    height: auto;
+    margin: 0 auto; /* Center it horizontally */
+    padding: 20px;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden; /* Hide overflow */
+    min-height: 100px; /* Ensure the container has some height */
+}
+
+/* Styling for buttons */
+.buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px;
+}
+
+/* Button styling */
+.info-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info-btn:hover {
+    background-color: #45a049;
+}
+
+/* Info box that will show content when a button is clicked */
+.info-box {
+    display: none; /* Initially hidden */
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 20px;
+    line-height: 2;
+    border: 1px solid #ccc;
+    margin: 20px;
+    overflow-y: auto; /* Allows scrolling for longer content */
+    box-sizing: border-box;
+    height: 70%; /* Prevents the box from growing too large */
+    margin-top: 30px; /* Ensures space between buttons and box */
+}
+
+/* Info box visible when active */
+.info-box.active {
+    display: flex;
+}
+
+/* Ensuring the image aspect ratio */
+.trade-idea-chart {
+    width: 100%; /* Makes chart fill the container */
+    position: relative;
+    height: 0; /* Set initial height */
+    padding-top: 39%; /* 2.3:1 aspect ratio */
+}
+
+.trade-idea-chart img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    text-align: center;
+    font-family: 'Markazi Text', serif;
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%; /* Full width */
+    margin-top: 0; /* Removed margin-top to avoid extra space */
+    z-index: 999;
+}
+
+/* Ensure footer stays at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Ensures main section grows to fill available space */
+}
+
+footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+}
