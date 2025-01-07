@@ -1,0 +1,518 @@
+/* Import the Markazi Text font */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Markazi Text', serif; /* Apply globally */
+}
+
+/* Base styles for navigation */
+nav {
+    background: linear-gradient(135deg, #3b8051, #4a8f6a, #2e6352); /* Cool gradient */
+    color: #f4f4f9; /* Light text for contrast */
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    transition: background 0.3s ease; /* Smooth background color change */
+    background-size: 400% 400%; /* Smooth animation effect */
+    animation: navbarGradientAnimation 15s ease infinite; /* Animate gradient */
+}
+
+/* Gradient Animation */
+@keyframes navbarGradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Nav container */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav list items */
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Nav links */
+nav ul li a {
+    font-family: 'Markazi Text', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #d1e8e2; /* Softer off-white for text */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: color 0.3s ease, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Remove blue outline when clicking a link */
+nav ul li a:focus {
+    outline: none;
+}
+
+/* Hover effects */
+nav ul li a:hover {
+    color: #fff; /* White text on hover */
+    background: #388e3c; /* Deep green background */
+    transform: scale(1.1); /* Slight scaling for interaction */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+}
+
+/* Active link style with a cool tone */
+nav ul li a.active {
+    color: #d0e2ff; /* Slightly darker, more visible lavender-blue */
+    font-weight: bold; /* Make the active link bolder */
+    text-shadow: 0 0 10px rgba(109, 148, 209, 0.6); /* Softer glow for better visibility */
+    font-size: 2.25rem;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Adjust the dropdown background color and align */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #505e64; /* Softer, neutral gray */
+    min-width: 200px; /* Ensure it aligns better with the nav links */
+    text-align: center; /* Center align text */
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Slightly softer shadow */
+    z-index: 1;
+    top: 100%; /* Position it directly below the nav link */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust to truly center it */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown items */
+.dropdown-content li {
+    padding: 12px 16px;
+}
+
+/* Dropdown links */
+.dropdown-content li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    font-size: 1rem; /* Slightly smaller text for dropdown */
+    font-weight: 600; /* Slightly bolder for clarity */
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content li a:hover {
+    background-color: #388e3c; /* Deep green on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content li a.active {
+    color: #ff9393;
+    font-size: 1rem;
+}
+
+/* Mobile menu toggle */
+.navbar-toggler {
+    display: none;
+}
+
+/* Hamburger icon animation */
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Logo at the left (scaled down) */
+.website-logo-left {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Adjust distance from the left side */
+    width: 50px; /* Scale down the logo */
+    height: auto;
+    border-radius: 50%;
+    z-index: 1001; /* Ensure logo is above the content */
+    transition: transform 0.3s ease; /* Optional: add transition on hover */
+}
+
+/* Logo at the right (scaled down) */
+.website-logo-right {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Adjust distance from the right side */
+    width: 50px; /* Scale down the logo */
+    height: auto;
+    border-radius: 50%;
+    z-index: 1001; /* Ensure logo is above the content */
+    transition: transform 0.3s ease; /* Optional: add transition on hover */
+}
+
+/* Optionally add hover effect for logos */
+.website-logo-left:hover, .website-logo-right:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* Ensure HTML and Body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background: linear-gradient(135deg, #c8c8c8, #a7a7a7);
+    animation: greyGradient 15s ease infinite;
+    flex-grow: 1;  /* Ensure main takes up available space */
+}
+
+/* Text Carousel Container */
+.text-carousel-container {
+    position: relative;
+    width: 50%;
+    height: auto; /* Allow height to be flexible */
+    max-height: 70vh; /* Add max height to limit its growth */
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+    margin-bottom: 15px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Optional: for a thinner scrollbar in Firefox */
+}
+
+/* Optional: Custom scrollbar styles (for webkit browsers like Chrome) */
+.text-carousel-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.text-carousel-container::-webkit-scrollbar-thumb {
+    background: #888; /* Change color of the scrollbar thumb */
+    border-radius: 10px;
+}
+
+.text-carousel-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovered */
+}
+
+/* Text Carousel Slide */
+.text-carousel-slide {
+    font-family: 'Markazi Text', serif;
+    font-size: 1.25rem;
+    line-height: 2;  /* Adjust line height for readability */
+    text-align: center; /* Center text horizontally */
+    padding: 10px; /* Padding inside the text container */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+/* Optional: To control how the paragraphs break inside the carousel */
+.text-carousel-slide p {
+    margin: 0; /* Remove extra margins from <p> elements */
+    padding: 0; /* Remove padding */
+}
+
+/* PDF Container (Image Carousel) */
+.pdf-container {
+    position: relative;
+    width: 50%;
+    height: auto; /* Allow height to be flexible */
+    max-height: 70vh; /* Add max height to limit its growth */
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Image Carousel Container */
+.image-carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Carousel Images */
+.carousel-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: none; /* Hide all images by default */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+/* Carousel Controls (Shared for both carousels) */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    margin: 0 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    font-family: 'Markazi Text', serif;
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    width: 100%; /* Full width */
+    margin-top: 20px; /* This may still cause some gap, so consider adjusting or removing */
+    z-index: 999;
+}
+
+/* Ensure footer stays at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    /* Adjust font size for better readability on mobile */
+    nav ul li a {
+        font-size: 1.25rem;  /* Smaller font size for mobile */
+        padding: 8px 12px;   /* Adjust padding */
+    }
+
+    /* Make the logo at the top smaller for mobile */
+    .website-logo-left,
+    .website-logo-right {
+        width: 40px; /* Smaller logo for mobile */
+        height: auto;
+        top: 10px; /* Reduce the top margin */
+    }
+
+    /* Adjust nav bar for mobile */
+    nav {
+        padding: 10px 15px;  /* Adjust padding for mobile */
+        display: flex;
+        justify-content: center;  /* Center the nav bar content */
+        align-items: center;      /* Center the nav items */
+        flex-direction: column;   /* Stack the items vertically */
+    }
+
+    /* Center the navigation items and remove padding */
+    nav ul {
+        display: flex;
+        flex-direction: column;    /* Stack items vertically */
+        justify-content: center;   /* Center items vertically */
+        align-items: center;       /* Center items horizontally */
+        padding-left: 0;           /* Remove padding on left */
+        padding-right: 0;          /* Remove padding on right */
+        margin: 0;                 /* Remove default margin */
+    }
+
+    nav ul li {
+        margin: 10px 0;  /* Increase margin between nav items */
+    }
+
+    /* Adjust the dropdown */
+    .dropdown-content {
+        left: 0;  /* Align dropdown to the left for mobile */
+        transform: translateX(0);
+        min-width: 100%;  /* Dropdown should take full width */
+    }
+
+    /* Adjust hamburger visibility and position */
+    .navbar-toggler {
+        display: block; /* Make the hamburger icon visible on mobile */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Hamburger icon adjustments */
+    .hamburger {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hamburger div {
+        background-color: #fff;
+        height: 4px;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Adjust active link size for mobile */
+    nav ul li a.active {
+        font-size: 1.5rem; /* Slightly larger active link for better visibility */
+    }
+
+    /* Ensure website logo is centered on mobile */
+    .website-logo-left, .website-logo-right {
+        position: fixed;
+        top: 10px;
+        z-index: 1000; /* Ensure the logos stay on top */
+    }
+
+    /* Button link adjustments for mobile */
+    .button-link {
+        font-size: 1.1rem; /* Slightly larger font size for mobile */
+        padding: 12px 20px;
+    }
+
+    /* Main Section */
+    main {
+        padding-top: 10px; /* Adjust padding for smaller screens */
+        width: 100%;  /* Full width for mobile */
+    }
+
+    /* Text Carousel Container */
+    .text-carousel-container {
+        width: 100%;  /* Full width on mobile */
+        max-height: 60vh;  /* Reduce max height to fit mobile screens better */
+        margin-bottom: 10px;  /* Reduce margin for mobile */
+        padding: 15px;  /* Adjust padding */
+    }
+
+    /* Text Carousel Slide */
+    .text-carousel-slide {
+        font-size: 1.1rem;  /* Smaller font size for mobile */
+        line-height: 1.75;  /* Adjust line height for readability */
+        padding: 8px;  /* Adjust padding */
+    }
+
+    /* PDF Container (Image Carousel) */
+    .pdf-container {
+        width: 100%;  /* Full width on mobile */
+        max-height: 60vh;  /* Same as the text carousel */
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+
+    /* Image Carousel Container */
+    .image-carousel-container {
+        width: 100%;  /* Full width on mobile */
+        height: auto;  /* Adjust height dynamically */
+        flex-direction: column;
+    }
+
+    /* Carousel Images */
+    .carousel-images img {
+        max-width: 100%;
+        height: auto; /* Ensure images fit */
+        display: block; /* Ensure images show on mobile */
+    }
+
+    /* Carousel Controls */
+    .carousel-controls {
+        flex-direction: column;  /* Stack controls vertically on mobile */
+        align-items: center; /* Center controls */
+    }
+
+    .nav-button {
+        padding: 10px 15px;  /* Adjust button size */
+        font-size: 1.1rem;  /* Adjust font size */
+        margin: 5px 0;  /* Stack buttons with vertical spacing */
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 20px;  /* Adjust footer padding */
+        font-size: 1.25rem;  /* Smaller font size for mobile */
+    }
+
+    /* Ensure footer stays at the bottom */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    footer {
+        margin-top: auto;  /* Push the footer to the bottom */
+    }
+}
