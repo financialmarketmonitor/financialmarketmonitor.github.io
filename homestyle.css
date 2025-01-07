@@ -286,6 +286,7 @@ main {
     background-color: #388e3c; /* Example color */
     border-radius: 5px;
     color: white;
+    margin: 10px;
     font-size: 1.5rem;
     cursor: pointer;
     display: inline-block; /* Ensure it behaves as a clickable block */
