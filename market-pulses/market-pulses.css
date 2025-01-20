@@ -105,6 +105,8 @@ nav ul li a.active {
     top: 100%; /* Position it directly below the nav link */
     left: 50%; /* Center it horizontally */
     transform: translateX(-50%); /* Adjust to truly center it */
+    max-height: 300px; /* Set a maximum height before scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
 }
 
 /* Show dropdown on hover */
