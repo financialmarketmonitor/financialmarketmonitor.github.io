@@ -89,7 +89,7 @@ nav ul li a.active {
     color: #d0e2ff; /* Slightly darker, more visible lavender-blue */
     font-weight: bold; /* Make the active link bolder */
     text-shadow: 0 0 10px rgba(109, 148, 209, 0.6); /* Softer glow for better visibility */
-    font-size: 2.25rem;
+    font-size: 1.75rem;
 }
 
 /* Dropdown styles */
@@ -111,6 +111,8 @@ nav ul li a.active {
     top: 100%; /* Position it directly below the nav link */
     left: 50%; /* Center it horizontally */
     transform: translateX(-50%); /* Adjust to truly center it */
+    max-height: 320px; /* Set a maximum height before scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
 }
 
 /* Show dropdown on hover */
@@ -356,9 +358,6 @@ footer p {
     margin: 0;  /* Remove any default margin */
 }
 
-
-
-
 /* Mobile UI */
 @media (max-width: 768px) {
     /* Hero Section adjustments */
@@ -367,65 +366,56 @@ footer p {
         font-size: 1.5rem; /* Scale down text */
     }
 
-    /* Logo Styling in Hero */
-    .website-logo {
-        width: 150px; /* Scale down logo */
-        margin-bottom: 10px; /* Reduce space below logo */
+    nav {
+        padding: 8px 15px;  /* Reduced padding on mobile */
     }
 
-    .website-logo-left, .website-logo-right {
-        width: 40px; /* Smaller logo size for mobile */
-        top: 10px; /* Reduce space from top */
-    }
-
-    /* Subtitle Styling */
-    .hero h3 {
-        font-size: 1.2rem; /* Smaller subtitle */
-        margin-top: 10px;
-    }
-
-    /* Navbar adjustments */
+    /* Adjust navigation for mobile screens */
     nav ul {
-        flex-direction: row; /* Keep items in a row */
-        justify-content: center; /* Keep nav items centered */
-        padding: 0;
+        flex-direction: column;
     }
 
     nav ul li {
-        margin: 10px 15px; /* Spacing between items */
+        margin: 8px 0;  /* Reduced margin for smaller navigation items */
     }
 
+    /* Reduce font size of nav links for smaller screens */
     nav ul li a {
-        font-size: 1.2rem; /* Smaller font size for links */
-        padding: 8px 12px; /* Less padding on smaller screens */
+        font-size: 1.25rem;  /* Smaller font size for mobile */
+        padding: 6px 10px;  /* Reduced padding for nav links */
     }
 
-    /* Mobile Hamburger Menu */
-    .navbar-toggler {
-        display: block; /* Make the hamburger icon visible */
-        cursor: pointer;
-    }
-
+    /* Adjust the hamburger icon */
     .hamburger {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        width: 30px;
-        height: 30px;
+        justify-content: space-between;
+        height: 18px;  /* Smaller height for the hamburger icon */
+        width: 24px;  /* Smaller width for the hamburger icon */
     }
 
-    .hamburger div {
-        width: 30px;
-        height: 4px;
-        background-color: #fff;
-        border-radius: 5px;
+    .website-logo-left, .website-logo-right {
+        top: 38%;
+        transform: scale(0.8); /* Scales the element to 80% of its original size */
     }
 
-    /* Dropdown Adjustments */
-    .dropdown-content {
-        min-width: 150px; /* Narrower dropdowns */
-        left: 0;
-        transform: none; /* Don't center dropdown */
+    /* Main Section */
+    main {
+        padding-top: 10px; /* Adjust padding for smaller screens */
+        width: 100%;  /* Full width for mobile */
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 20px;  /* Adjust footer padding */
+        font-size: 1.25rem;  /* Smaller font size for mobile */
+    }
+
+    /* Ensure footer stays at the bottom */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 
     /* Main section */
@@ -456,55 +446,20 @@ footer p {
         display: none;
     }
 
-}
-
-/* Mobile-friendly adjustments for very small screens (max-width: 480px) */
-@media (max-width: 480px) {
-    .hero {
-        padding: 20px 10px; /* Even smaller padding */
+    /* Footer */
+    footer {
+        font-size: 1.15rem;  /* Slightly smaller font size for mobile */
     }
 
-    .website-logo {
-        width: 120px; /* Even smaller logo */
+    /* Ensure footer stays at the bottom */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 
-    .website-logo-left, .website-logo-right {
-        width: 30px; /* Even smaller logos */
-        top: 5px; /* Reduced top margin */
+    footer {
+        margin-top: auto;  /* Push the footer to the bottom */
     }
 
-    .hero h3 {
-        font-size: 1rem; /* Small font for subtitle */
-    }
-
-    nav ul li a {
-        font-size: 1rem; /* Even smaller font for nav items */
-        padding: 5px 10px; /* Tighter padding */
-    }
-
-    .dropdown-content {
-        min-width: 120px; /* Smaller dropdown */
-    }
-
-    /* Info Box */
-    .info-box {
-        width: 95%;               /* More flexibility for small screens */
-        padding: 12px;            /* Less padding */
-        font-size: 0.9rem;        /* Smaller font size */
-    }
-
-    /* Button Link Style */
-    .button-link {
-        padding: 6px 12px;        /* More compact padding */
-        font-size: 0.85rem;       /* Smaller font */
-    }
-
-    /* Widget Container */
-    .widget-container {
-        display: none;
-    }
-
-    footer p {
-        font-size: 1rem;         /* Smaller text */
-    }
 }
