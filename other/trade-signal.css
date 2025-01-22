@@ -361,9 +361,9 @@ footer {
         width: 24px;  /* Smaller width for the hamburger icon */
     }
 
-    /* Hide logos for small screens */
     .website-logo-left, .website-logo-right {
-        display: none;
+        top: 38%;
+        transform: scale(0.8); /* Scales the element to 80% of its original size */
     }
 
     .info-container {
