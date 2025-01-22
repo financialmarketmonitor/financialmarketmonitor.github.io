@@ -83,7 +83,7 @@ nav ul li a.active {
     color: #d0e2ff; /* Slightly darker, more visible lavender-blue */
     font-weight: bold; /* Make the active link bolder */
     text-shadow: 0 0 10px rgba(109, 148, 209, 0.6); /* Softer glow for better visibility */
-    font-size: 2.25rem;
+    font-size: 1.75rem;
 }
 
 /* Dropdown styles */
@@ -330,15 +330,35 @@ footer {
     margin-top: auto; /* Pushes footer to the bottom */
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments for Mobile */
 @media (max-width: 768px) {
+
+    nav {
+        padding: 8px 15px;  /* Reduced padding on mobile */
+    }
+
     /* Adjust navigation for mobile screens */
     nav ul {
         flex-direction: column;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 8px 0;  /* Reduced margin for smaller navigation items */
+    }
+
+    /* Reduce font size of nav links for smaller screens */
+    nav ul li a {
+        font-size: 1.25rem;  /* Smaller font size for mobile */
+        padding: 6px 10px;  /* Reduced padding for nav links */
+    }
+
+    /* Adjust the hamburger icon */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 18px;  /* Smaller height for the hamburger icon */
+        width: 24px;  /* Smaller width for the hamburger icon */
     }
 
     /* Hide logos for small screens */
@@ -346,22 +366,13 @@ footer {
         display: none;
     }
 
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 20px;
-        width: 25px;
-    }
-
-    /* Reduce padding and font-size for smaller screens */
     .info-container {
         width: 90%;
-        padding: 10px;
+        padding: 8px;  /* Reduced padding for info container */
     }
 
     .info-btn {
-        font-size: 1.25rem;
+        font-size: 1.25rem;  /* Adjusted font size for mobile buttons */
     }
 
     .trade-idea-chart {
@@ -370,11 +381,12 @@ footer {
 }
 
 @media (max-width: 480px) {
+    /* Further adjustments for very small screens */
     .info-btn {
-        font-size: 1rem;
+        font-size: 1rem;  /* Smaller font size for buttons */
     }
 
     nav ul li a {
-        font-size: 1.25rem;
+        font-size: 1.1rem;  /* Even smaller font size for very small screens */
     }
 }
