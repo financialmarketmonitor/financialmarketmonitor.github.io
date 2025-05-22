@@ -6,24 +6,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Markazi Text', serif; /* Apply globally */
+    font-family: 'Markazi Text', serif;
 }
 
-/* Base styles for navigation */
 nav {
-    background: linear-gradient(135deg, #3b8051, #4a8f6a, #2e6352); /* Cool gradient */
-    color: #f4f4f9; /* Light text for contrast */
+    background: linear-gradient(135deg, #3b8051, #4a8f6a, #2e6352);
+    color: #f4f4f9;
     padding: 15px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
-    transition: background 0.3s ease; /* Smooth background color change */
-    background-size: 400% 400%; /* Smooth animation effect */
-    animation: navbarGradientAnimation 15s ease infinite; /* Animate gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    background-size: 400% 400%;
+    animation: navbarGradientAnimation 15s ease infinite;
 }
 
-/* Gradient Animation */
 @keyframes navbarGradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -57,7 +55,7 @@ nav ul li a {
     font-family: 'Markazi Text', serif;
     font-weight: bold;
     font-size: 1.5rem;
-    color: #d1e8e2; /* Softer off-white for text */
+    color: #d1e8e2;
     text-decoration: none;
     padding: 10px 15px;
     display: inline-block;
@@ -72,17 +70,17 @@ nav ul li a:focus {
 
 /* Hover effects */
 nav ul li a:hover {
-    color: #fff; /* White text on hover */
-    background: #388e3c; /* Deep green background */
-    transform: scale(1.1); /* Slight scaling for interaction */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+    color: #fff; 
+    background: #388e3c;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Active link style with a cool tone */
 nav ul li a.active {
-    color: #d0e2ff; /* Slightly darker, more visible lavender-blue */
-    font-weight: bold; /* Make the active link bolder */
-    text-shadow: 0 0 10px rgba(109, 148, 209, 0.6); /* Softer glow for better visibility */
+    color: #d0e2ff;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(109, 148, 209, 0.6);
     font-size: 1.75rem;
 }
 
@@ -96,17 +94,17 @@ nav ul li a.active {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #505e64; /* Softer, neutral gray */
-    min-width: 200px; /* Ensure it aligns better with the nav links */
-    text-align: center; /* Center align text */
+    background-color: #505e64;
+    min-width: 200px;
+    text-align: center;
     border-radius: 4px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Slightly softer shadow */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    top: 100%; /* Position it directly below the nav link */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Adjust to truly center it */
-    max-height: 300px; /* Set a maximum height before scrolling */
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 /* Show dropdown on hover */
@@ -121,18 +119,18 @@ nav ul li a.active {
 
 /* Dropdown links */
 .dropdown-content li a {
-    color: #fff; /* White text */
+    color: #fff;
     text-decoration: none;
     display: block;
     padding: 8px 12px;
-    font-size: 1rem; /* Slightly smaller text for dropdown */
-    font-weight: 600; /* Slightly bolder for clarity */
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /* Hover effect for dropdown links */
 .dropdown-content li a:hover {
-    background-color: #388e3c; /* Deep green on hover */
-    color: #fff; /* White text on hover */
+    background-color: #388e3c;
+    color: #fff;
 }
 
 /* Hover effect for dropdown links */
@@ -166,30 +164,30 @@ nav ul li a.active {
 /* Logo at the left (scaled down) */
 .website-logo-left {
     position: absolute;
-    top: 20px;
-    left: 20px; /* Adjust distance from the left side */
-    width: 50px; /* Scale down the logo */
+    top: 15px;
+    left: 20px;
+    width: 50px;
     height: auto;
     border-radius: 50%;
-    z-index: 1001; /* Ensure logo is above the content */
-    transition: transform 0.3s ease; /* Optional: add transition on hover */
+    z-index: 1001;
+    transition: transform 0.3s ease;
 }
 
 /* Logo at the right (scaled down) */
 .website-logo-right {
     position: absolute;
-    top: 20px;
-    right: 20px; /* Adjust distance from the right side */
-    width: 50px; /* Scale down the logo */
+    top: 15px;
+    right: 20px;
+    width: 50px;
     height: auto;
     border-radius: 50%;
-    z-index: 1001; /* Ensure logo is above the content */
-    transition: transform 0.3s ease; /* Optional: add transition on hover */
+    z-index: 1001;
+    transition: transform 0.3s ease;
 }
 
-/* Optionally add hover effect for logos */
+/* Add hover effect for logos */
 .website-logo-left:hover, .website-logo-right:hover {
-    transform: scale(1.1); /* Slightly scale up on hover */
+    transform: scale(1.1);
 }
 
 /* Ensure HTML and Body take full height */
@@ -206,26 +204,26 @@ main {
     padding-top: 20px;
     background: linear-gradient(135deg, #c8c8c8, #a7a7a7);
     animation: greyGradient 15s ease infinite;
-    flex-grow: 1;  /* Ensure main takes up available space */
+    flex-grow: 1;
 }
 
 /* Text Carousel Container */
 .text-carousel-container {
     position: relative;
     width: 50%;
-    height: auto; /* Allow height to be flexible */
-    max-height: 70vh; /* Add max height to limit its growth */
+    height: auto;
+    max-height: 70vh;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center; /* Center content horizontally */
+    justify-content: flex-start;
+    align-items: center;
     padding: 20px;
     margin-bottom: 15px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    scrollbar-width: thin; /* Optional: for a thinner scrollbar in Firefox */
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
 
 /* Optional: Custom scrollbar styles (for webkit browsers like Chrome) */
@@ -246,25 +244,25 @@ main {
 .text-carousel-slide {
     font-family: 'Markazi Text', serif;
     font-size: 1.25rem;
-    line-height: 2;  /* Adjust line height for readability */
-    text-align: center; /* Center text horizontally */
-    padding: 10px; /* Padding inside the text container */
-    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
-    width: 100%; /* Ensure it takes the full width */
+    line-height: 2;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 /* Optional: To control how the paragraphs break inside the carousel */
 .text-carousel-slide p {
-    margin: 0; /* Remove extra margins from <p> elements */
-    padding: 0; /* Remove padding */
+    margin: 0;
+    padding: 0;
 }
 
 /* PDF Container (Image Carousel) */
 .pdf-container {
     position: relative;
     width: 50%;
-    height: auto; /* Allow height to be flexible */
-    max-height: 70vh; /* Add max height to limit its growth */
+    height: auto;
+    max-height: 70vh;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -299,9 +297,9 @@ main {
 
 .carousel-images img {
     max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    display: none; /* Hide all images by default */
-    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+    height: auto;
+    display: none;
+    transition: opacity 1s ease-in-out;
 }
 
 /* Carousel Controls (Shared for both carousels) */
@@ -313,8 +311,9 @@ main {
     margin-bottom: 10px;
 }
 
+/* Back & Next Controls */
 .nav-button {
-    background-color: #4CAF50;
+    background-color: #43a047;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -327,15 +326,58 @@ main {
 }
 
 .nav-button:hover {
-    background-color: #45a049;
+    background-color: #388e3c;
     transform: scale(1.1);
+}
+
+/* Slider Navigation */
+.slider-container {
+    background-color: #e1f3e2;
+    padding: 14px 0;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#carousel-slider {
+    width: 80%;
+    accent-color: #4caf50;
+    cursor: pointer;
+}
+
+#carousel-slider::-webkit-slider-runnable-track {
+    background: #bde5c1;
+    height: 6px;
+    border-radius: 3px;
+}
+
+#carousel-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #388e3c;
+    border: 2px solid #fff;
+    margin-top: -6px;
+}
+
+#carousel-slider:hover::-webkit-slider-thumb {
+    background: #fff;
+    border-color: #2e7d32;
+}
+
+#slider-label {
+    font-size: 1rem;
+    color: #2e7d32;
+    margin-top: 6px;
 }
 
 /* Footer */
 footer {
     display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 20px;
     background-color: #333;
@@ -343,8 +385,8 @@ footer {
     font-size: 1.5rem;
     color: white;
     position: relative;
-    width: 100%; /* Full width */
-    margin-top: 20px; /* This may still cause some gap, so consider adjusting or removing */
+    width: 100%;
+    margin-top: 20px;
     z-index: 999;
 }
 
@@ -356,108 +398,111 @@ body {
 }
 
 footer {
-    margin-top: auto; /* Pushes footer to the bottom */
+    margin-top: auto;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
 
     nav {
-        padding: 8px 15px;  /* Reduced padding on mobile */
+        padding: 8px 15px;
     }
 
-    /* Adjust navigation for mobile screens */
     nav ul {
         flex-direction: column;
     }
 
     nav ul li {
-        margin: 8px 0;  /* Reduced margin for smaller navigation items */
+        margin: 8px 0;
     }
 
-    /* Reduce font size of nav links for smaller screens */
     nav ul li a {
-        font-size: 1.25rem;  /* Smaller font size for mobile */
-        padding: 6px 10px;  /* Reduced padding for nav links */
+        font-size: 1.25rem;
+        padding: 6px 10px;
     }
 
-    /* Adjust the hamburger icon */
     .hamburger {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 18px;  /* Smaller height for the hamburger icon */
-        width: 24px;  /* Smaller width for the hamburger icon */
+        height: 18px;
+        width: 24px;
     }
 
-    /* Hide logos for small screens */
     .website-logo-left, .website-logo-right {
         top: 38%;
-        transform: scale(0.8); /* Scales the element to 80% of its original size */
+        transform: scale(0.8);
     }
 
-    /* Main Section */
     main {
-        padding-top: 10px; /* Adjust padding for smaller screens */
-        width: 100%;  /* Full width for mobile */
+        padding-top: 10px;
+        width: 100%;
     }
 
-    /* Text Carousel Container */
     .text-carousel-container {
-        width: 100%;  /* Full width on mobile */
-        max-height: 55vh;  /* Reduced max height to fit mobile screens better */
-        margin-bottom: 8px;  /* Reduced margin for mobile */
-        padding: 12px;  /* Smaller padding */
-    }
-
-    /* Text Carousel Slide */
-    .text-carousel-slide {
-        font-size: 1.05rem;  /* Smaller font size for mobile */
-        line-height: 1.6;  /* Adjust line height for readability */
-        padding: 6px;  /* Reduced padding */
-    }
-
-    /* PDF Container (Image Carousel) */
-    .pdf-container {
-        width: 100%;  /* Full width on mobile */
-        max-height: 55vh;  /* Same as the text carousel */
+        width: 100%;
+        max-height: 55vh;
         margin-bottom: 8px;
-        padding: 12px;  /* Smaller padding */
+        padding: 12px;
     }
 
-    /* Image Carousel Container */
+    .text-carousel-slide {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        padding: 6px;
+    }
+
+    .pdf-container {
+        width: 100%;
+        max-height: 55vh;
+        margin-bottom: 8px;
+        padding: 12px;
+    }
+
     .image-carousel-container {
-        width: 100%;  /* Full width on mobile */
-        height: auto;  /* Adjust height dynamically */
+        width: 100%;
+        height: auto;
         flex-direction: column;
     }
 
-    /* Carousel Images */
     .carousel-images img {
         max-width: 100%;
-        height: auto; /* Ensure images fit */
-        display: block; /* Ensure images show on mobile */
+        height: auto;
+        display: block;
     }
 
-    /* Carousel Controls */
     .carousel-controls {
-        flex-direction: column;  /* Stack controls vertically on mobile */
-        align-items: center; /* Center controls */
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-button {
-        padding: 8px 12px;  /* Smaller button padding */
-        font-size: 1.1rem;  /* Adjust button font size */
-        margin: 4px 0;  /* Vertical margin for stacked buttons */
+        padding: 8px 12px;
+        font-size: 1.1rem;
+        margin: 4px 0;
     }
 
-    /* Footer */
+    .slider-container {
+        padding: 10px 12px;
+        border-radius: 8px;
+        margin: 12px auto;
+        width: 90%;
+    }
+
+    #carousel-slider {
+        width: 100%;
+    }
+
+    #carousel-slider::-webkit-slider-thumb {
+        height: 20px;
+        width: 20px;
+    }
+
     footer {
-        padding: 12px 18px;  /* Smaller footer padding */
-        font-size: 1.15rem;  /* Slightly smaller font size for mobile */
+        padding: 12px 18px;
+        font-size: 1.15rem;
     }
 
-    /* Ensure footer stays at the bottom */
     body {
         display: flex;
         flex-direction: column;
@@ -465,6 +510,6 @@ footer {
     }
 
     footer {
-        margin-top: auto;  /* Push the footer to the bottom */
+        margin-top: auto;
     }
 }
