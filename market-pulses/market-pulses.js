@@ -19,6 +19,7 @@ function buildHeader() {
     const header = document.getElementById("site-header");
   
     const pulses = [
+      { n: 14, date: "Coming Soon!" },
       { n: 13, date: "05/20/2025" },
       { n: 12, date: "03/17/2025" },
       { n: 11, date: "02/24/2025" },
