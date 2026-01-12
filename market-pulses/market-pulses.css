@@ -573,8 +573,13 @@ body {
         display: block;
     }
 
-    .carousel-controls {
+    .navigation-container {
         flex-direction: column;
+    }
+
+    .carousel-controls {
+        flex-direction: row;
+        gap: 10px;
         align-items: center;
     }
 
@@ -602,10 +607,12 @@ body {
 
     .toc-container {
         position: relative;
-        width: 100%;
-        max-height: none;
+        max-height: 10vh;
+        max-width: 50%;
         margin: 10px 0;
         top: auto;
+        margin-top: -10px;
+        margin-bottom: -10px;
     }
 
     body {
