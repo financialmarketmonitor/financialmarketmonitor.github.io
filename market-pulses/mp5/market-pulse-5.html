@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-09N019SRQK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-09N019SRQK');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:description" content="Hi! I hope you enjoy reading up on Market Pulse 5!">
@@ -15,16 +26,6 @@
   <link rel="stylesheet" href="/market-pulses/market-pulses.css">
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-09N019SRQK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-09N019SRQK');
-</script>
-
 <body>
   <header id="site-header"></header>
   
@@ -38,15 +39,42 @@
         </div>
     </div>    
     
-    <!-- Single Navigation Buttons for both Carousels -->
-    <div class="carousel-controls">
-        <button class="nav-button" id="back-button">Back</button>
-        <button class="nav-button" id="next-button">Next</button>
-    </div>
+    <!-- Navigation Section -->
+    <div class="navigation-container">
 
-    <div class="slider-container">
-        <input type="range" id="carousel-slider" min="1" value="1">
-        <p id="slider-label">Slide 1 of 17</p>
+        <div class="brief-summary">
+            <a href="/market-pulses/mp5/mp5_brief.pdf" target="_blank" class="brief-button">
+                View Brief Summary (PDF)
+            </a>
+        </div>
+
+        <aside class="toc-container">
+        <h3>Important Sections</h3>
+        <ul id="toc-list">
+            <li data-slide="1">Welcome</li>
+            <li data-slide="3">Recent Events Overview</li>
+            <li data-slide="4">Domestic Economic Data</li>
+            <li data-slide="6">Foreign Economic Data</li>
+            <li data-slide="7">October Earnings Reports</li>
+            <li data-slide="8">October Economic Calendar</li>
+            <li data-slide="11">M&A Activity</li>
+            <li data-slide="12">Consumer Staples Acquisition (KDP > GHOST)</li>
+            <li data-slide="13">Thank You & Sources</li>
+        </ul>
+        </aside>
+
+        <div class="main-navigation">
+            <div class="carousel-controls">
+                <button class="nav-button" id="back-button">Back</button>
+                <button class="nav-button" id="next-button">Next</button>
+            </div>
+
+            <div class="slider-container">
+                <input type="range" id="carousel-slider" min="1" value="1">
+                <p id="slider-label">Slide 1 of 17</p>
+            </div>
+        </div>
+
     </div>
 
     <!-- Carousel Section -->
