@@ -29,16 +29,398 @@
 <body>
   <header id="site-header"></header>
   
-  <main data-total-slides="0">    
+  <main data-total-slides="52">    
+    <!-- PDF Section -->
+    <div class="pdf-container">
+        <div class="image-carousel-container">
+            <div class="carousel-images">
+                <!-- Images will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Navigation Section -->
+    <div class="navigation-container">
+
+        <div class="brief-summary">
+            <a href="/market-pulses/mp14/mp14_brief.pdf" target="_blank" class="brief-button">
+                View Brief Summary (PDF)
+            </a>
+        </div>
+
+        <aside class="toc-container">
+        <h3>Important Sections</h3>
+        <ul id="toc-list">
+            <li data-slide="1">Welcome</li>
+            <li data-slide="3">Markets In Focus</li>
+            <li data-slide="4">May & June 2025 Recap</li>
+            <li data-slide="5">May & June 2025 Domestic Economic Data</li>
+            <li data-slide="9">May & June 2025 Foreign Economic Data</li>
+            <li data-slide="11">Q3 2025 (July - Sept) Recap</li>
+            <li data-slide="12">Q3 2025 (July - Sept) Domestic Economic Data</li>
+            <li data-slide="15">Q3 2025 (July - Sept) Foreign Economic Data</li>
+            <li data-slide="18">Q4 2025 (Oct - Dec) Recap</li>
+            <li data-slide="19">Q4 2025 (Oct - Dec) Domestic Economic Data</li>
+            <li data-slide="21">Q4 2025 (Oct - Dec) Foreign Economic Data</li>
+            <li data-slide="23">January 2026 Thus Far Recap</li>
+            <li data-slide="24">January 2026 Domestic Economic Data</li>
+            <li data-slide="27">January 2026 Foreign Economic Data</li>
+            <li data-slide="30">2026 Forecast</li>
+            <li data-slide="31">JP Morgan 2026 Forecast</li>
+            <li data-slide="33">Goldman Sachs 2026 Forecast</li>
+            <li data-slide="39">January Earnings Reports</li>
+            <li data-slide="40">January Economic Calendar</li>
+            <li data-slide="47">M&A Activity</li>
+            <li data-slide="48">Healthcare Acquisition (BSX > Penumbra)</li>
+            <li data-slide="49">Thank You & Sources</li>
+        </ul>
+        </aside>
+
+        <div class="main-navigation">
+            <div class="carousel-controls">
+                <button class="nav-button" id="back-button">Back</button>
+                <button class="nav-button" id="next-button">Next</button>
+            </div>
+
+            <div class="slider-container">
+                <input type="range" id="carousel-slider" min="1" value="1">
+                <p id="slider-label">Slide 1 of 52</p>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Carousel Section -->
     <div class="text-carousel-container">
 
         <!-- Carousel Text Content -->
         <div class="text-carousel-slide">
-            <p>Welcome to Market Pulse 14!<br>This report will be released on January 19, 2026!</p>
+            <p>Welcome to Market Pulse 14!</p>
         </div>
-        
+        <div class="text-carousel-slide">
+            <p>
+                It’s important to follow the markets not only because they help guide personal and business investment strategies but also because they provide 
+                valuable insights into employment trends, consumer behavior, the direction of fiscal and monetary policies, and other key socioeconomic factors.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                To set the stage, we'll begin with the coverage of the latter half of 2025, split into May - June, July - Sept, and Oct - Dec. Afterward, we'll review recent developments and forecasts for 2026.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                This section covers market developments and macro conditions during May-June 2025, a period that marked a shift away from early-year uncertainty toward gradually improving risk sentiment. Over these two months, easing trade tensions, continued resilience in the U.S. labor market, and incremental progress on disinflation helped stabilize growth expectations and support equity markets, particularly in the United States. While headline economic data remained uneven, forward-looking indicators and financial conditions pointed to the global economy moving beyond a fragile stabilization phase. By late June, markets began to price a more constructive baseline outlook, though meaningful regional divergences persisted. The U.S. remained the primary driver of growth and earnings momentum, Europe showed tentative signs of stabilization but faced ongoing structural constraints, and APAC benefited from improved trade clarity amid mixed domestic fundamentals.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's first look at domestic economic conditions.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                U.S. markets came into late May with a cautiously constructive tone that eased through June. A major catalyst was the temporary easing in U.S.–China trade tensions, which began as a 90-day tariff truce and later translated into more tangible tariff rollbacks. By June, tariffs on Chinese exports had been meaningfully reduced, helping reinforce the view that trade friction would not re-ignite near-term inflation pressures.
+                <br><br>
+                On the growth front, the data told a mixed but improving story. Q1 GDP was revised down to a -0.3% contraction, largely driven by softer consumer spending and inventory-related distortions. That said, expectations shifted materially by June, with consensus moving toward Q2 growth above 3%, supported by resilient household consumption running around a 1.7% annualized pace. Retail sales remained uneven, but underlying discretionary spending held up better than headlines suggested, pointing to a more selective consumer rather than a broad-based pullback.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Across May and June, the labor market continued to act as a stabilizing anchor for the broader economy. Payroll growth consistently exceeded expectations, with job gains of +177k in April and +147k in June, while the unemployment rate remained tightly range-bound around 4.1–4.2%, well below long-run averages. Wage growth held near 3.9%, continuing to outpace inflation and providing ongoing support to real household incomes. Inflation also moved modestly in the right direction, though progress remained uneven. Core PCE eased into the ~2.5–2.7% YoY range, while headline CPI printed near 2.3–2.4%, a multi-year low. A brief spike in energy prices during mid-June added temporary pressure, but those effects faded quickly, reinforcing the view that inflation was gradually cooling. Taken together, these dynamics strengthened the case for one to two Fed rate cuts later in 2025, though not on an immediate timeline.
+                <br><br>
+                Housing, however, remained the clearest pocket of domestic weakness throughout the period. New single-family home sales saw a brief surge in May, reaching an annualized pace of roughly 743k, but momentum quickly faded as affordability constraints reasserted themselves. Existing home sales hovered near 4.0 million, while single-family housing starts fell 7.3% YoY by June. Elevated home prices, restrictive mortgage rates, and limited affordability continued to sideline first-time buyers, reinforcing a structural shift toward rentals and multifamily housing.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Equity markets put together a strong two-month rebound across May and June. The rally began in May with a sharp, tech-led move, as the Nasdaq gained nearly 10%, and then broadened meaningfully in June as easing geopolitical tensions, improved trade clarity, more dovish Fed signaling, and resilient earnings supported risk appetite. By late June, the S&P 500 had climbed to 6,173, rising nearly 5% in June alone, while the Nasdaq pushed above 20,000, with leadership extending beyond mega-cap tech into small caps and other cyclically sensitive areas.
+                <br><br>
+                Fixed income, by contrast, remained volatile but largely range-bound. After a spike in yields in mid-May, the 10-year Treasury settled into a relatively tight range around 4.35–4.40%, while the 30-year hovered just below 5%. Ongoing fiscal concerns, reinforced by a sovereign credit downgrade and persistent deficit projections, continued to cap the upside for long-duration bonds and limited the scope for a sustained rally at the long end of the curve.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's now look at foreign economic conditions.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Across May and June, Europe continued to face persistent growth headwinds despite some external tailwinds. The Eurozone’s 2025 GDP forecast was revised down to roughly 0.9%, reflecting weak global demand and ongoing trade uncertainty. While Q1 GDP posted a modest 0.3% quarter-over-quarter expansion, momentum faded into June as survey data hovered near stagnation and industrial output fell sharply in April. Beneath the aggregate data, performance diverged meaningfully at the country level. Germany continued to lag, with manufacturing activity stuck in contraction and unemployment rising, weighing on sentiment amid ongoing export and industrial softness. France also remained in contraction for a tenth consecutive month, though equity markets found support from strong luxury and consumer-sector earnings. In contrast, parts of Southern Europe, particularly Italy and Spain, showed relative resilience, supported by fiscal measures and sector-specific strength.
+                <br><br>
+                Inflation across the region stabilized but remained uneven, complicating the policy outlook. Price pressures were relatively contained in Germany and Spain, while France continued to see notably lower inflation readings. Against this backdrop, the ECB maintained a flexible stance and signaled the possibility of a 25-basis-point rate cut, though elevated inflation expectations for the year ahead constrained the scope for aggressive easing. European equity markets posted moderate gains in June following choppy trading in May, with the STOXX Europe 600 rising modestly and leadership coming from Germany and France, while the UK lagged amid weakening services confidence. Bond yields drifted higher on increased defense and infrastructure spending, but still appeared relatively attractive compared to U.S. Treasuries. Overall, Europe benefited from improved global trade dynamics and easing geopolitical risks, but domestic structural challenges, weak industrial momentum, and uneven inflation argue for selective exposure rather than broad-based optimism.
+                <br><br>
+                In the Asia-Pacific region, improved global trade sentiment helped stabilize markets, though domestic fundamentals remained mixed. Japan experienced a volatile but gradually improving backdrop across May and June. Q1 GDP contracted by 0.7%, driven by weaker exports and soft domestic consumption, and manufacturing activity remained in contraction. At the same time, inflation stayed persistent, with Tokyo core CPI running above 3%, keeping policy pressure elevated. The Bank of Japan held rates steady at 0.5% but emphasized data dependence and signaled a willingness to tighten further if inflation proved durable. Government bond yields climbed to multi-decade highs amid reduced central bank purchases and mounting concerns around fiscal sustainability. Despite these challenges, Japanese equities rebounded in June, supported by improved global trade sentiment and progress in U.S.–Japan trade discussions.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                This section covers macro and market developments during July–August 2025, a period defined by a two-speed global cycle in which near-term activity remained resilient even as forward-looking trade momentum softened. Steady services demand and a rebound in manufacturing supported current growth, while the fading effects of earlier export front-loading and renewed tariff escalation weighed on trade-sensitive indicators. Easing financial conditions helped sustain risk appetite despite sticky inflation across advanced economies, reinforcing a gradual and data-dependent policy path. By late summer, markets were balancing still-firm activity against cooling external demand, with policy credibility and financial conditions becoming increasingly important. The United States continued to show relative growth resilience but faced a growing tension between labor market cooling and persistent inflation, Europe saw tentative stabilization led by improving manufacturing signals amid ongoing trade and fiscal constraints, and APAC remained shaped by external demand dynamics, with Japan acting as a global trade barometer and China dependent on targeted policy support amid lingering deflation pressures.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's first look at domestic economic conditions.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                By August, trade policy tightened meaningfully, with the World Bank estimating that the average effective U.S. tariff rate rose from roughly 2.4% at the start of 2025 to about 17.4% under the early-September policy stance. New tariff measures implemented through August reinforced this shift, aligning with external estimates that place the effective rate near 17% after accounting for substitution effects. The macro implication is inherently stagflationary at the margin: higher prices alongside weaker trade volumes. This helps explain why growth momentum cooled over the summer even as headline activity data avoided outright deterioration, particularly in trade-sensitive sectors and supply chains.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Outside of trade, the defining U.S. macro theme in Q3-to-date was the divergence between resilient demand and a clearly cooling labor market. Consumer activity held up better than employment data suggested, with real personal consumption rising 0.3% MoM in July and non-defense manufacturing shipments increasing 0.9%, pointing to steady household outlays and continued business investment. At the same time, labor market momentum slowed sharply, with average monthly payroll gains dropping to roughly 27k from May through August, which was about 100k below the pace seen earlier in the year, while goods-producing employment deteriorated first. Inflation remained sticky enough to keep policy cautious, with headline inflation rising to 2.9% YoY in August, signaling that disinflation was not linear. Together, softer labor conditions alongside persistent inflation reinforced a gradual, data-dependent Fed path and increased market sensitivity to each incremental labor and inflation release.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's now look at foreign economic conditions.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Eurozone was particularly characterized by cyclical stabilization rather than a renewed growth upswing. After the effects of earlier export front-loading faded, euro area growth downshifted sharply, with Q2 GDP expanding just 0.1% quarter-over-quarter and Germany and Italy slipping into contraction. While the broader macro pulse remained sluggish, retail sentiment held up better than activity data suggested, providing a modest buffer to domestic demand.
+                <br><br>
+                The most constructive late-summer development was the turn in manufacturing sentiment, with the Eurozone manufacturing PMI crossing back above 50 in August for the first time since early 2022, supported by improving output and new orders tied to domestic demand. However, composite growth remained mild, reinforcing the view that this was a stabilization phase rather than a breakout. At the country level, Germany benefited from the manufacturing upturn despite continued external demand pressure, France lagged amid softer services and industrial momentum, and Italy remained highly sensitive to trade and investment swings. Even as financial conditions eased globally, long-end yields in parts of Europe drifted higher on fiscal and political concerns, underscoring that term-premium risk continues to offset central bank easing. Overall, July–August marked a fragile stabilization for the Eurozone: positive for downside risk reduction, but still constrained by trade drag and domestic fiscal uncertainty.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Across the Asia-Pacific region, July and August 2025 highlighted a growing divergence between domestic resilience and weakening external demand. In Japan, underlying activity held up reasonably well, with the composite PMI remaining in expansionary territory, but the external picture deteriorated meaningfully. Export orders fell sharply into deeper contraction by August, signaling mounting pressure on Japan’s trade-exposed manufacturing sector as global demand softened. This dynamic reinforced Japan’s sensitivity to trade and tariff developments, increasing the importance of policy and FX dynamics as buffers should external weakness persist. Overall, the late-summer setup reflected steady domestic conditions paired with a clear loss of export momentum.
+                <br><br>
+                China’s data over the same period pointed to a more pronounced deceleration, with both external and internal demand softening. Export growth slowed to its weakest pace since early 2025, imports decelerated alongside weaker domestic consumption, and PMIs remained mixed, with manufacturing stuck in contraction and services expanding only modestly. Price pressures continued to move in the wrong direction, as CPI slipped back into YoY declines and producer prices remained deeply negative, reinforcing renewed deflation concerns across goods and industry. In response, the macro environment increasingly pointed toward reliance on policy support and targeted stimulus to stabilize growth. Beyond China, EM economies across APAC showed a similar split where domestic activity remained resilient, but export orders continued to weaken as trade headwinds intensified, highlighting the region’s exposure to the global trade cycle and underscoring why external demand remains the key swing factor for APAC into the back half of the year.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                This section covers macro and market developments during July–August 2025, a period defined by a two-speed global cycle in which near-term activity remained resilient even as forward-looking trade momentum softened. Steady services demand and a rebound in manufacturing supported current growth, while the fading effects of earlier export front-loading and renewed tariff escalation weighed on export orders and other trade-sensitive indicators. Easing financial conditions helped sustain risk appetite despite sticky inflation across advanced economies, reinforcing a gradual and data-dependent policy path. By late summer, markets were balancing still-firm activity against cooling external demand and higher policy sensitivity, with the U.S. holding up better than trade indicators implied but facing rising tension between labor market cooling and persistent inflation, Europe showing tentative stabilization led by improving manufacturing signals yet constrained by trade drag and fiscal sensitivity, and APAC remaining shaped by external demand dynamics as Japan acted as a global trade barometer through weakening export orders while China remained the central policy and deflation node reliant on targeted support to stabilize growth.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's first look at domestic economic conditions.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                In the United States, economic conditions through Q4 2025 were best characterized as a late-cycle expansion marked by resilient growth, reduced visibility, and gradual labor cooling. Growth held up into year-end, supported by steady consumer spending, especially among higher-income cohorts, and a persistent AI-driven capex and productivity tailwind. However, the government shutdown created a temporary data vacuum early in the quarter, limiting real-time clarity and reinforcing a “no major change in direction” narrative rather than signaling a clear inflection point.
+                <br><br>
+                Beneath the surface, labor market dynamics continued to cool in a controlled manner. Hiring slowed meaningfully compared to earlier in the year but stopped short of a sharp deterioration, with job growth increasingly concentrated in less cyclical sectors such as healthcare. At the same time, inflation remained sticky near the 3% range, complicated by tariff-related pressures and measurement distortions tied to the shutdown, making individual data prints less reliable and reinforcing a cautious policy stance.
+                <br><br>
+                Against this backdrop, the Federal Reserve maintained a risk-management approach to easing, delivering a December rate cut to 3.50%–3.75% while signaling a higher bar for additional cuts absent clearer labor market weakness. The more consequential shift came on the balance sheet, as the Fed ended quantitative tightening and transitioned toward a reinvestment and reserve-management framework aimed at preserving funding market stability. Financial markets responded favorably: rate volatility declined, the Treasury curve bear-steepened late in the quarter amid term-premium and fiscal concerns, and risk assets finished strong overall. Equity performance broadened beyond the largest names, though confidence in the durability of AI-related earnings increasingly became the key swing factor. Credit spreads remained tight, and agency MBS stood out as a top-performing sector, benefiting from lower volatility, strong demand, and improved technicals.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's now look at foreign economic conditions.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Outside the United States, Q4 2025 was defined by stabilization amid policy divergence rather than broad-based acceleration. In the Eurozone, growth entered the quarter with soft momentum and heightened sensitivity to trade and geopolitical uncertainty, consistent with the fading impact of earlier export front-loading. The European Central Bank held rates unchanged in late October, emphasizing inflation near target and continued, albeit modest, economic expansion. Activity data improved into November, led primarily by services, but momentum faded again by December, pointing to late-quarter deceleration rather than a renewed downturn. At the country level, the recovery remained uneven, with France improving off a weak base while relative strength across the region remained concentrated in services-heavy economies. Fiscal and political considerations continued to weigh on long-end yields, reinforcing a backdrop of resilience tempered by fragility.
+                <br><br>
+                In the Asia-Pacific region, Q4 highlighted clear policy and growth divergence. Japan stood out as the key inflection point, delivering a rate hike to approximately 0.75% in December and accelerating its normalization away from ultra-accommodative policy. Markets increasingly shifted focus toward the implications of higher yields for growth, foreign exchange, and the 2026 policy path. In contrast, China remained in a managed stabilization regime. A more pro-growth policy tilt helped support exports and near-term sentiment, but the medium-term outlook continued to be shaped by trade barriers, fragmentation, and lingering domestic demand weakness. Taken together, APAC in Q4 reflected better-than-feared outcomes, but with momentum remaining policy-dependent rather than self-sustaining.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+              This section covers market and macro developments during the first two weeks of January 2026, a period marked by a strong risk-on start followed by healthy digestion and rotation rather than outright risk aversion. Early gains were driven by broad participation, with small- and mid-cap equities and value outperforming and reinforcing the late-2025 shift away from narrow mega-cap leadership. In the United States, the dominant theme was labor market cooling without a clear break: hiring slowed meaningfully as payroll gains and job openings declined, yet unemployment remained stable and consumer demand held up better than feared. At the same time, inflation data surprised to the downside, supporting the view that disinflation is progressing, albeit unevenly, and giving the Federal Reserve greater optionality later in 2026. Equity leadership broadened further, credit markets absorbed heavy issuance with ease, and spread product outperformed Treasuries, underscoring a constructive but selective risk backdrop. In Europe, short-term momentum improved, led by signs of an industrial turn in Germany and better sentiment across the euro area, even as sticky services inflation kept the ECB cautious and constrained expectations for near-term easing, with trade competitiveness and fiscal constraints remaining key structural themes. Across APAC, divergence was again pronounced, as Japan traded a mix of risk-on equities, a weaker yen, and rising rates amid expectations of further policy normalization and fiscal stimulus, while China’s rally remained increasingly policy-managed—supported by AI optimism but constrained by leverage controls and lingering deflation pressures. Taken together, the first two weeks of 2026 reinforced a global environment defined by rotation, selective easing, and policy-driven differentiation rather than a uniform risk-on or risk-off regime.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's first look at domestic economic conditions.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                The dominant macro signal in early January was a clear cooling in the U.S. labor market, though not a breakdown. Hiring slowed meaningfully, with December payrolls printing just +50k and prior months revised lower, while job openings and hires fell to their lowest levels since late 2024. At the same time, the unemployment rate edged down to 4.4%, reinforcing the message that labor demand is softening but the labor market remains intact.
+                <br><br>
+                This combination points to late-cycle normalization rather than recessionary stress. Firms appear more selective in hiring, but layoffs remain contained and household balance sheets continue to provide support. From a policy perspective, the labor data strengthened the case that restrictive conditions are easing organically, giving the Federal Reserve more flexibility later in 2026 without forcing an immediate response.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Against this labor backdrop, growth and inflation data skewed supportive. Consumer demand held up better than feared, with retail sales coming in stronger than expected despite some cooling in the control group. Inflation prints also improved, as core CPI slowed to 2.6% YoY, the coolest reading since 2021, reinforcing the view that disinflation is progressing even if not perfectly linear.
+                <br><br>
+                Markets reflected this balance. Equities rallied sharply to start the year before digesting gains, with leadership rotating toward small-caps and value rather than reversing outright. Large-cap indexes paused, while mid- and small-cap stocks continued to make new highs, signaling broadening participation rather than risk aversion. Credit markets echoed this tone: spread product outperformed Treasuries, heavy issuance was absorbed smoothly, and volatility remained contained. Despite persistent policy and geopolitical headlines, markets largely traded fundamentals (e.g., cooling labor, improving inflation, and rotation) rather than panic.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's now look at foreign economic conditions.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Across Europe, markets posted steady gains over the first two weeks of January, with Germany emerging as the incremental positive driver. Equity performance was constructive but selective, as leadership rotated week to week and reflected improving fundamentals rather than a broad risk-on surge. Under the surface, macro data pointed to a tentative turn in late-2025 and early-2026 momentum, particularly in Germany, where industrial production and factory orders surprised to the upside and growth data suggested the economy may have exited recession.
+                <br><br>
+                Broader eurozone indicators echoed this stabilization theme. Industrial output rose for a third consecutive month, sentiment measures improved to their strongest levels since mid-2025, and retail activity showed signs of late-year recovery. Inflation dynamics, however, remained a key constraint. While headline inflation slowed to the ECB’s 2% target, services inflation stayed elevated near 3.4%, reinforcing the view that the ECB’s cutting cycle is likely finished for now. In the UK, growth data improved into November, but housing softened, highlighting uneven transmission of easing financial conditions. Structurally, Europe received a medium-term boost from provisional approval of the Mercosur trade deal, though competitiveness concerns tied to tariffs, FX, and China remain the central risk. Overall, Europe’s near-term outlook improved, but policy and structural constraints continue to cap upside.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Across APAC, market performance over the past two weeks reflected a clear divergence in policy paths and macro dynamics, with Japan and China moving in distinctly different directions. In Japan, equities rallied strongly, supported by yen weakness that boosted exporter earnings and reinforced risk-on positioning. USD/JPY hovered in the high-150s, while government bond yields drifted higher as markets priced additional Bank of Japan hikes in 2026 and growing fiscal stimulus expectations. Political developments added another layer of volatility, with reports of a potential snap election and the re-emergence of the “Takaichi trade” fueling interest in AI, nuclear, and defense-linked sectors.
+                <br><br>
+                Beneath the market strength, Japan’s macro picture remained mixed. Household spending rebounded meaningfully, especially in autos and discretionary categories, which suggested improving demand, even as real wages continued to contract, keeping purchasing power a key watchpoint. In China, equity markets were driven by AI-related optimism early in the period but faced renewed pressure as regulators tightened margin requirements to curb leverage, signaling a preference for controlled gains over speculative excess. Inflation data showed modest improvement, with CPI turning positive and core inflation firming, though producer prices remained negative, underscoring ongoing deflationary pressure. Strong export growth and a record trade surplus supported headline momentum but increased the risk of external backlash. Overall, APAC remains a story of divergence: Japan is trading policy normalization, fiscal politics, and FX dynamics, while China continues a managed reflation path, balancing tech-led growth support with tight financial control and a persistent easing bias.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                This section outlines the macro and market outlook for 2026, a year expected to be defined by sturdy growth, cooling labor markets, and a slower but sustained return toward price stability. Despite elevated policy and geopolitical uncertainty, the baseline environment remains one of expansion rather than contraction, with the U.S. continuing to outperform global peers. Growth is expected to hold near trend, supported by easing financial conditions, ongoing AI-driven capital investment, and fading tariff-related drags, while downside risks appear more tied to labor market softening than to a traditional recessionary shock.
+                <br><br>
+                A central theme for 2026 is the disconnect between growth and employment. Labor markets are expected to cool further without breaking, reflecting productivity gains and more selective hiring rather than outright demand destruction. Inflation, meanwhile, is likely to remain in the upper-2% range for much of the year, delaying a full return to target but allowing disinflation to gradually reassert itself as wage pressures ease and shelter inflation decelerates. Against this backdrop, the Federal Reserve is expected to deliver limited additional easing before shifting into a wait-and-see stance, with front-end rates declining modestly while longer-dated yields remain range-bound amid strong nominal growth and fiscal constraints.
+                <br><br>
+                For markets, this setup favors risk assets but with greater sensitivity to valuation and policy surprises. Equity performance should remain supported by earnings and capex, though at a slower and more volatile pace than in prior years. Credit returns are likely to be driven primarily by carry rather than spread compression, while bonds serve more as income and hedging tools than sources of capital appreciation. Dollar downside appears limited as U.S. growth outpaces peers, and deal activity is expected to pick up, led by refinancing, AI investment, and selective M&A. Overall, 2026 looks less like a turning point and more like a late-cycle extension. In other words, it is likely constructive, but increasingly dependent on policy execution, diversification, and disciplined risk management.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's first look at JP Morgan's 2026 outlook.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                J.P. Morgan’s 2026 outlook centers on a continuation of late-cycle expansion dynamics rather than a regime shift. U.S. growth is expected to hold near trend, with real GDP expanding at roughly the same pace as 2025 and recession risks remaining contained despite elevated volatility. Consumer spending continues to act as a stabilizer, supported by low unemployment, high asset prices, and targeted fiscal support from the One Big Beautiful Bill Act, though spending growth is likely to slow unevenly across income groups as higher borrowing costs and credit delinquencies weigh more heavily on younger and lower-income households. Business investment remains a key pillar, led by AI-related capital expenditures, even as the marginal contribution to growth begins to decelerate from recent outsized gains.
+                <br><br>
+                Labor markets are expected to cool further but not crack. Hiring momentum has slowed meaningfully, reflecting low hiring and low firing conditions rather than outright stress, and unemployment is projected to peak in the mid-4% range before stabilizing. Wage growth is expected to converge toward its long-term average, increasing slack modestly without triggering a sharp downturn. Inflation remains the primary constraint on policy flexibility. J.P. Morgan expects inflation to stay in the upper-2% range through much of 2026, as tariff passthrough and limited labor slack offset disinflation from moderating rents, lower energy prices, and productivity gains. As a result, the Fed is likely nearing the end of this easing phase, with one additional cut expected before shifting into a wait-and-see stance that prioritizes price stability and labor market monitoring.
+                <br><br>
+                Financial conditions should remain broadly supportive, but sector-level differentiation will persist. Housing is expected to stay in low gear due to affordability constraints, mortgage lock-in, and supply limitations, while AI investment continues to anchor capex growth at a slower but still historically elevated pace. The dollar’s downside is likely limited by U.S. growth outperformance, even as rate differentials narrow. Looking ahead, J.P. Morgan sees deal activity picking up, driven primarily by refinancing needs, AI-linked investment, and selective M&A as policy uncertainty fades. Overall, the outlook points to a durable but slower late-cycle environment in 2026 characterized by steady growth, cooling labor markets, sticky inflation, and increasingly selective opportunities rather than broad, momentum-driven upside.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let's now look at Goldman Sachs' 2026 outlook.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Goldman expects global growth to remain resilient into 2026, with real GDP expanding around 2.8%, modestly above consensus expectations. The U.S. continues to stand out as the primary source of outperformance, supported by easing tariff drag, fiscal support from tax refunds tied to the One Big Beautiful Bill Act, and still-accommodative financial conditions. China is also expected to hold up better than feared, as strong export competitiveness helps offset ongoing weakness in domestic demand, while the euro area benefits from German fiscal stimulus and relative strength in Southern Europe, particularly Spain.
+                <br><br>
+                Despite steady output growth, labor markets are expected to remain subdued. Productivity gains, driven in part by increased technological adoption, have raised the threshold of growth required to generate incremental hiring. This disconnect is most apparent in the U.S., where unemployment has drifted higher even as GDP growth has remained firm. Goldman expects unemployment to stabilize in the mid-4% range in 2026, reflecting labor market cooling rather than recessionary stress. The defining macro theme is therefore not slowing growth, but a labor market that is no longer tightening in step with economic output.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Goldman expects disinflation to reassert itself more clearly in 2026, bringing inflation closer to central bank targets across most developed economies. In the U.S. and UK, core inflation is projected to ease from around 3% toward 2% by late 2026 as tariff pass-through effects fade and temporary policy distortions roll off. Moderating wage growth and continued cooling in shelter inflation are expected to be key contributors to this normalization in price pressures.
+                <br><br>
+                Broader global forces reinforce the disinflationary backdrop. Excess manufacturing capacity and rising export supply from China, combined with softer energy prices and improving productivity, create ongoing downward pressure on goods inflation. While tariffs have delayed progress in the near term, Goldman views their impact as largely one-off, with favorable base effects helping accelerate disinflation in the second half of 2026. Overall, inflation risks appear modestly skewed to the downside over the medium term, particularly as AI-driven productivity gains begin to diffuse beyond the tech sector.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Goldman expects the Federal Reserve to deliver roughly 50 basis points of additional rate cuts in 2026, bringing the policy rate into a 3.0–3.25% range. Importantly, this easing is not a response to deteriorating growth, but rather reflects growing confidence that inflation is converging back toward target alongside a gradually cooling labor market. While the Fed remains firmly data-dependent, Goldman sees risks to its rate path as modestly skewed to the dovish side if employment softens further.
+                <br><br>
+                That said, the scope for aggressive easing appears limited. Strong nominal growth, persistent fiscal deficits, and recurring questions around Fed independence are expected to keep long-term yields from falling sharply. Policy divergence is also set to widen globally, with the U.S. and UK continuing to ease, the euro area largely on hold, and Japan moving further along its normalization path. The result is an environment where front-end rates drift lower, but longer-dated yields remain range-bound rather than collapsing.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Goldman’s outlook remains broadly constructive for risk assets, particularly equities, as resilient growth and continued disinflation support earnings and financial conditions. That said, the firm cautions that markets have moved ahead of the underlying macro fundamentals. While AI investment continues at scale, its near-term contribution to measured GDP remains limited, and current valuations already embed a significant portion of expected future gains.
+                <br><br>
+                This sets up a late-cycle tradeoff: cyclical momentum can still drive upside, but elevated valuations raise volatility and increase sensitivity to downside surprises. Credit markets appear less compelling, with tight spreads, rising leverage, and heavy issuance constraining return potential. Bonds are expected to serve primarily as income and hedging tools rather than sources of strong capital appreciation. In this environment, Goldman emphasizes diversification across regions, sectors, and asset classes, alongside selective hedges in rates, FX, gold, and volatility to manage tail risks.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Goldman’s 2026 outlook is anchored around ten key macro and market themes. First, the global cycle continues, with solid growth and non-recessionary Fed cuts supporting risk assets, though elevated valuations increase volatility risk. Second, U.S. growth remains stronger than markets currently price, but is increasingly vulnerable to further labor market cooling. Third, disinflation is expected to reassert itself, with inflation returning closer to target by late 2026 as tariff effects fade and medium-term forces, such as AI productivity gains and China’s export supply, come into view.
+                <br><br>
+                Fourth, monetary easing becomes more differentiated, with rate cuts concentrated in the U.S. and U.K., while other developed markets remain on hold and Japan gradually normalizes policy. Fifth, AI investment continues at scale, but markets have moved ahead of the macro impact, raising the likelihood of higher equity volatility and wider credit spreads. Sixth, China’s growing trade surplus (“China Shock 2.0”) reinforces global disinflationary pressures while intensifying competitive challenges for Europe and parts of Asia.
+                <br><br>
+                Seventh, fiscal risks remain dormant but unresolved, keeping long-end yields elevated despite easing inflation. Eighth, the FX backdrop turns more pro-cyclical, with a modestly weaker dollar but limited downside as U.S. growth continues to outperform. Ninth, EM assets remain supported after a strong run, though Goldman favors rotating toward more domestically driven exposures. Finally, late-cycle risks rise, reinforcing the need for diversification and selective hedging across rates, FX, gold, and equity volatility.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Now that we've extensively covered global economic conditions, let's take a closer look at the earnings season.
+                <br><br>
+                TSM, BAC, GS, MS, and BLK beat earnings (beat EPS & revenue expectations). JPM, WFC, and C posted mixed earnings (beat one and missed the other). DAL and JEF missed earnings (missed EPS and revenue expectations).
+                <br><br>
+                In terms of upcoming earnings, this week, the following companies will be reporting earnings: NFLX, JNJ, PG, COF, and GE.
+                Next week, we have UPS, GM, NOC, TSLA, ASML, T, IBM, SOFI, VZ, and AXP.
+                The week after, we have PEP, PFE, CMG, and ARM.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Here is the January Economic Calendar. In the next two weeks, UK CPI, GDP Final Growth Rate for Q3, Flash Composite PMI, PCE, and Eurozone GDP will be released. In addition, the BoJ meeting, BoC meeting, and Fed interest rate decisions will take place.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Over the year, the S&P 500 ticked up 15.86%, the Nasdaq Composite 18.82%, the Dow Jones Industrial Average 13.55%, and the Russell 2000 17.11%.
+                <br><br>
+                The S&P 500 (weighted based on market cap) tracks the 500 largest public companies.
+                <br>
+                The Nasdaq Composite (Weighted based on market cap) tracks the 100 largest, actively traded, non-financial companies.
+                <br>
+                The Dow Jones Industrial Average (weighted based on share price) tracks the 30 largest American non-transportation/utility companies.
+                <br>
+                The Russell 2000 (weighted based on market cap) tracks 2000 small-cap equities.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Over the course of the month, the S&P 500 ticked up 1.73%, the Nasdaq Composite 1.34%, the Dow Jones Industrial Average 2.20%, and the Russell 2000 6.15%.
+                <br><br>
+                The S&P 500 (weighted based on market cap) tracks the 500 largest public companies.
+                <br>
+                The Nasdaq Composite (Weighted based on market cap) tracks the 100 largest, actively traded, non-financial companies.
+                <br>
+                The Dow Jones Industrial Average (weighted based on share price) tracks the 30 largest American non-transportation/utility companies.
+                <br>
+                The Russell 2000 (weighted based on market cap) tracks 2000 small-cap equities.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Over the course of the past week, the S&P 500 ticked down 0.56%, the Nasdaq Composite down 0.99%, the Dow Jones Industrial Average down 0.43%, and the Russell 2000 up1.27%.
+                <br><br>
+                The S&P 500 (weighted based on market cap) tracks the 500 largest public companies.
+                <br>
+                The Nasdaq Composite (Weighted based on market cap) tracks the 100 largest, actively traded, non-financial companies.
+                <br>
+                The Dow Jones Industrial Average (weighted based on share price) tracks the 30 largest American non-transportation/utility companies.
+                <br>
+                The Russell 2000 (weighted based on market cap) tracks 2000 small-cap equities.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>Here is the yearly market heatmap.</p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>Here is the monthly market heatmap.</p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>Here is the weekly market heatmap.</p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>Here are a few recent M&A deals.</p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>
+                Let’s take a closer look at one in the healthcare sector.
+                <br><br>
+                Boston Scientific is set to acquire Penumbra in a $14.5B enterprise value transaction, valuing Penumbra at $374 per share. The deal will be financed with a target mix of approximately 73% cash and 27% stock, with the roughly $11B cash portion funded through a combination of cash on hand and new debt. The transaction is expected to close in 2026, pending shareholder and regulatory approvals.
+                <br><br>
+                Strategically, the acquisition represents a scaled entry into mechanical thrombectomy and neurovascular markets, strengthening Boston Scientific’s cardiovascular adjacencies. By pairing Penumbra’s innovation and high-growth thrombectomy portfolio with Boston Scientific’s global distribution and commercialization capabilities, the combined company aims to accelerate growth in large and underpenetrated end markets. Penumbra generated approximately $1.4B in FY25 revenue, growing over 17% YoY, with Q4 growth accelerating into the low-20% range.
+                <br><br>
+                From a financial perspective, the deal is expected to be modestly dilutive to EPS by approximately $0.06–$0.08 in the first year, roughly neutral to slightly accretive in year two, and accretive over the longer term as synergies and scale benefits materialize.
+            </p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>I hope y’all found this analysis fruitful, and I wish you the best of luck if you plan on investing or trading!</p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>Here are the primary sources I utilized to retrieve information presented in this report.</p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>Here are the primary sources I utilized to retrieve information presented in this report.</p>
+        </div>
+        <div class="text-carousel-slide">
+            <p>Here are the primary sources I utilized to retrieve information presented in this report.</p>
+        </div>
     </div>
 
   </main>
