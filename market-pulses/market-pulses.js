@@ -25,6 +25,7 @@ function buildHeader() {
   if (!header) return;
 
   const pulses = [
+    { n: 15, date: "01/26/2026" },
     { n: 14, date: "01/19/2026" },
     { n: 13, date: "05/20/2025" },
     { n: 12, date: "03/17/2025" },
