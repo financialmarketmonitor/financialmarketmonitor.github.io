@@ -42,6 +42,10 @@ function buildHeader() {
     { n: 1,  date: "09/16/2024" }
   ];
 
+  const debriefs = [
+    { n: 1, date: "02/09/2026" }
+  ];
+
   const extras = [
     { href: "/other/trade-signal-1/trade-signal-1.html", label: "Trade Signal 1 11/04/2024" },
     { href: "/other/trade-signal-2/trade-signal-2.html", label: "Trade Signal 2 03/10/2025" }
@@ -67,6 +71,19 @@ function buildHeader() {
         })
       ),
       currentPulse !== null
+    )
+  );
+
+  ul.appendChild(
+    dropdown(
+      "Daily Debriefs",
+      debriefs.map(d =>
+        navItem({
+          href: `/daily-debriefs/dd${d.n}/dd${d.n}.html`,
+          label: `Daily Debrief ${d.n} ${d.date}`,
+          active: false
+        })
+      )
     )
   );
 
