@@ -17,6 +17,8 @@ function buildHeader() {
   if (!header) return;
 
   const debriefs = [
+    { n: 5, date: "02/17/2026" },
+    { n: 4, date: "02/12/2026" },
     { n: 3, date: "02/11/2026" },
     { n: 2, date: "02/10/2026" },
     { n: 1, date: "02/09/2026" }
